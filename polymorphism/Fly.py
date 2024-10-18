@@ -1,14 +1,31 @@
 class CanFly:
+    """
+    Базовый класс CanFly
+    :arg
+        high(int) высота полета
+        speed(int) скорость полета
+    """
     def __init__(self,high,speed):
         self.__high = 0
         self.__speed = 0
         self.set_high(high)
         self.set_speed(speed)
     def get_high(self):
+        """
+        Геттер для получения высоты полета
+        :return: __high
+        :rtype: int
+        """
         return self.__high
     def get_speed(self):
         return self.__speed
     def set_high(self,value_high):
+        """
+        Сеттер для установки значения высоты
+        :param value_high: высота полета
+        :type value_high: int
+        :return:
+        """
         self.__high = value_high
     def set_speed(self,value_speed):
         self.__speed = value_speed
